@@ -1,3 +1,14 @@
 html{
-    background-color: blue;
+    background-color: rgb(0, 0, 225);
+}
+
+body{
+    background-color: rgb(61, 61, 255)
+}
+
+header{
+    text-align: center;
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 200;
 }
