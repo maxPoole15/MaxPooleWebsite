@@ -1,14 +1,47 @@
+/*---------This stuff is a template for the whole website---------*/
 html{
     background-color: rgb(0, 0, 225);
 }
 
-body{
-    background-color: rgb(61, 61, 255)
-}
-
 header{
+    color: rgb(225, 225, 225);
     text-align: center;
-    font-size: larger;
+    font-size: 50px;
     font-family: 'Times New Roman', Times, serif;
     font-weight: 200;
+    background-color: rgb(56, 56, 255);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+p{
+    color: rgb(225, 225, 225);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+
+
+
+/*---------These are id's to use---------*/
+#page{
+    margin: 30px;
+}
+
+
+
+/*---------These are specific class that can be called----------*/
+
+/*This class creates a playing card with a cool background*/
+.card{
+    background-image: url("cloudsgif.webp");
+    height: 300px;
+    width: 200px;
+    background-color: rgba(42,196,231,0.582);
+    margin: 20px;
+    padding: 20px;
+    border: 5px ridge rgb(218, 165, 32);
+    box-shadow: 0 7px 15px 0 rgba(0,0,0,0.609);
+    display: inline-block;
+    border-radius: 10px;
+    color: white;
 }
