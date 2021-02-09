@@ -53,3 +53,12 @@ footer{
 #cloud.card{
     background-image: url("cloudsgif.webp");
 }
+#boxes.card{
+    background-image: url("boxes.gif");
+}
+#pixel.card{
+    background-image: url("pixelated.gif");
+}
+#ripple.card{
+    background-image: url("ripple.gif");
+}
