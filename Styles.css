@@ -1,7 +1,6 @@
 /*---------This stuff is a template for the whole website---------*/
 html{
-    /*background: linear-gradient( #ccffff,  #ccffcc, #ffcccc, #ffccff);*/
-    background: url(https://cdn-media-1.freecodecamp.org/imgr/MJAkxbh.png);
+    background: linear-gradient( #ccffff,  #ccffcc, #ffcccc, #ffccff);
 }
 
 header{
@@ -39,10 +38,9 @@ footer{
 
 /*This class creates a playing card with a cool background*/
 .card{
-    background-image: url("cloudsgif.webp");
     height: 300px;
     width: 200px;
-    background-color: rgba(42,196,231,0.582);
+    background-color: rgba(25, 148, 175, 0.61);
     margin: 20px;
     padding: 5px;
     border: 10px ridge rgb(218, 165, 32);
@@ -50,4 +48,8 @@ footer{
     display: inline-block;
     border-radius: 10px;
     color: white;
+}
+
+#cloud.card{
+    background-image: url("cloudsgif.webp");
 }
