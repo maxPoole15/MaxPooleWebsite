@@ -1,6 +1,7 @@
 /*---------This stuff is a template for the whole website---------*/
 html{
-    background-color: rgb(134, 217, 255);
+    /*background: linear-gradient( #ccffff,  #ccffcc, #ffcccc, #ffccff);*/
+    background: url(https://cdn-media-1.freecodecamp.org/imgr/MJAkxbh.png);
 }
 
 header{
@@ -28,13 +29,10 @@ footer{
     text-align: center;
 }
 
-
-
 /*---------These are id's to use---------*/
 #page{
     margin: 30px;
 }
-
 
 
 /*---------These are specific class that can be called----------*/
@@ -46,8 +44,8 @@ footer{
     width: 200px;
     background-color: rgba(42,196,231,0.582);
     margin: 20px;
-    padding: 20px;
-    border: 5px ridge rgb(218, 165, 32);
+    padding: 5px;
+    border: 10px ridge rgb(218, 165, 32);
     box-shadow: 0 7px 15px 0 rgba(0,0,0,0.609);
     display: inline-block;
     border-radius: 10px;
