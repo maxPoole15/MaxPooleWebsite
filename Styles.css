@@ -50,6 +50,35 @@ footer{
     color: white;
 }
 
+
+/*Changes the background color of the page*/
+
+/*.css-selector {
+    background: linear-gradient(270deg, #8009d0, #0274e3, #ec07ee);
+    background-size: 600% 600%;
+
+    -moz-animation: AnimationName 30s ease infinite;
+    -o-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+}
+
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}*/
+
+
 #cloud.card{
     background-image: url("cloudsgif.webp");
 }
