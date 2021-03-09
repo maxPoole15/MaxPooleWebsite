@@ -91,3 +91,12 @@ footer{
 #ripple.card{
     background-image: url("ripple.gif");
 }
+
+.button-count {
+    padding: 10px;
+    margin: 20px;
+}
+
+.card-custom {
+    max-width: 40rem;
+}
