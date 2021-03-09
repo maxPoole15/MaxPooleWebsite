@@ -44,6 +44,7 @@ function playerTurn(){
     if (!gameOver()){
         enemyHealth -= 10;
         updateDisplay();
+        gameOver();
     } 
 }
 
@@ -51,6 +52,7 @@ function enemyTurn(){
     if (!gameOver()){
         playerHealth -= 10;
         updateDisplay();
+        gameOver();
     } 
 }
 
@@ -60,7 +62,7 @@ function startGame(){
 }
 
 function updateDisplay(){
-    playerHealthDisplay.innerHTML = "<h1>player Health = " + playerHealth + "</h1>";
+    playerHealthDisplay.innerHTML = "player Health = " + playerHealth;
     playerHealthDisplay.innerHTML = "enemy Health = " + enemyHealth;
 }
 
