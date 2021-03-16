@@ -63,7 +63,7 @@ function startGame(){
 
 function updateDisplay(){
     playerHealthDisplay.innerHTML = "player Health = " + playerHealth;
-    playerHealthDisplay.innerHTML = "enemy Health = " + enemyHealth;
+    enemyHealthDisplay.innerHTML = "enemy Health = " + enemyHealth;
 }
 
 
