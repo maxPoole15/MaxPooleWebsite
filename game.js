@@ -7,12 +7,91 @@
 4. display variables that allow us to change the page
 5. game logic
 */
+document.getElementsByClassName
 
 //Game Logic Variables
 var playerHealth  = 50;
 var enemyHealth = 50;
 var gameInfo = "Play by clicking buttons";
-var cards = [[]];
+var cards[];
+var playerCards = [
+    []
+];
+var enemyCards = [
+    [1,2]
+];
+
+
+function setUpCardBank(){
+    for (var i = 0; i < cardsBankLength; i++){
+        var cardStats = getRandomStat();
+        cardStats.push(getRandomName());
+        cardStats.push(getRandomColor())
+        if (i < cardsBankLength/2 ){
+            playerCards.push(cardStats);
+        }
+        else {
+            enemyCards.push(cardStats);
+        }
+    }
+}
+
+function getRandomStat() {
+    var ret = [];
+    var attack = parseInt(Math.random() * 6 + 4);
+    var defense = parseInt(Math.random() * 8 + 6);
+    ret.push(attack);
+    ret.push(defense);
+    return ret;
+}
+
+
+function getRandomName() {
+    var vowels = "aeiouy";
+    var consanance = "qwrtpsdfghjklzxcvbnm";
+    var length = parseInt(Math.Random * 4 + 4);
+    var ret = ""
+    if (length % 2 == 0){
+        ret += vowels.charAt(parseInt(Math.random() * consanance.length));
+    }
+    for (var i = 0; i < length; i++) {
+        ret += consanance.charAt(parseInt(Math.random() * consanance.length));
+        ret += vowels.charAt(parseInt(Math.random() * vowles.length));
+    }
+
+    return ret;
+}
+
+
+function initializeStartingCards(){
+
+    //Get a list of all the cards damage in play
+    var cardsDamage = document.getElementsByClassName("card-attack")
+    var cardsHealth = document.getElementsByClassName("card-defense")
+    var cardName = document.getElementsByClassName("card-name")
+    var cards = document.getElementsByClassName("card");
+
+    for(var i = 0; i < 3; i++){
+        //Set the attack of the enemy
+        cardsDamage[i].innerHTML = "Attack: " + enemyCards[i][0];
+        //set the defense
+        cardsHealth[i].innerHTML = "Defense: " + enemyCards[i][1];
+        //set the name
+        cardName[i].innerHTML = enemyCards[i][2];
+
+        cards[i].style.backgroundColor = enemyCards[i][3];
+    }
+    
+}
+
+
+function getRandomColor(){
+    var colorLetters = "0123456789abcdefg";
+    var ret = "#";
+    for (var i = 0; i < 6; i++){
+        ret += colorLetters.charAt(parseInt(Math.random() * colorLetters.length));
+    }
+}
 
 
 //Display Variables
@@ -57,8 +136,13 @@ function enemyTurn(){
 }
 
 function startGame(){
+
+    setUpCardBank();
+    initializeStartingCards();
     playerTurnButton.removeAttribute("disabled");
     enemyTurnButton.removeAttribute("disabled");
+
+
 }
 
 function updateDisplay(){

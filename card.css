@@ -1,0 +1,26 @@
+.card-container {
+    max-width: 35rem;
+    margin-bottom: 20px;
+    background-color: rgba(153, 74, 74, 0.685);
+    padding: 20px;
+}
+
+.banner-custom{
+    text-align: center;
+    color: red;
+    background-color: rgba(255, 166, 0, 0.404);
+    margin-top: 20px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.banner-custom-Player{
+    text-align: center;
+    color: rgb(67, 177, 241);
+    background-color: rgba(117, 202, 145, 0.363);
+    margin-top: 20px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
