@@ -55,7 +55,11 @@ function setUpCardBanks() {
         cardStats.push(getRandomColor());
         // [1, 2, 'random name', 'random color']
         cardStats.push(i);
-        // [1, 2, 'random name', 'random color', 'enemy_id_3']
+        // [1, 2, 'random name', 'random color', 'enemy_id_3' 'image url']
+
+        //for out image
+        cardState.push(getRandomImageURL());
+        // []
 
         console.log("card stats: " + cardStats);
         // [3, 6, 'aoughalkh'];
@@ -109,6 +113,7 @@ function initializeStartingCards(){
     var cardsDefense= document.getElementsByClassName('card-defense');
     var cardsName = document.getElementsByClassName('card-name');
     var cards = document.getElementsByClassName('card');
+    var cardImage = document.getElementsByTagName('img');
     //enemy card initializiations:
     for (var i = 0; i < 6; i++) {
         //enemy cards: 
@@ -124,6 +129,8 @@ function initializeStartingCards(){
         cards[i].style.backgroundColor = enemyCards[i][3];
         
         cards[i].id = "enemy_id_" + enemyCards[i][4];
+        
+        cardImage[i].src = enemyCards[i][5];
         }
         //player cards:
         else {
@@ -138,6 +145,12 @@ function initializeStartingCards(){
         }
 
     }
+}
+
+function getRandomImageURL() {
+    var ret = "https://picsum.photos/200/id/";
+    var imgID =  parseInt(Math.random() * 100) + "/200";
+    var ret;
 }
 
 function enemyTurn() {
