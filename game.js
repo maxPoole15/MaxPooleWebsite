@@ -129,7 +129,7 @@ function initializeStartingCards(){
         cards[i].style.backgroundColor = enemyCards[i][3];
         
         cards[i].id = "enemy_id_" + enemyCards[i][4];
-        
+
         cardImage[i].src = enemyCards[i][5];
         }
         //player cards:
@@ -142,6 +142,8 @@ function initializeStartingCards(){
         cardsName[i].innerHTML = playerCards[i][2];
 
         cards[i].style.backgroundColor = playerCards[i][3];
+
+        cardImage[i].src = playerCards[i][5];
         }
 
     }
